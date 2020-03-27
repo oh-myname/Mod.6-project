@@ -36,16 +36,22 @@ for(let activeLink of activeLinks){
   }
 
 
-  /* [AFOOT] get 'href' attribute from the clicked link */
-  const a = document.querySelectorAll('titles')             //i'm not sure about that
-  const href = titles.getAttribute('href');
-  console.log('href')
+  /* [DONE] get 'href' attribute from the clicked link */
+  const articleSelector = clickedElement.getAttribute('href');
+  console.log(articleSelector);
 
 
   /* [AFOOT] find the correct article using the selector (value of 'href' attribute) */
+  const targetArticle = querySelector(href);
+  console.log(targetArticle);
+
 
   /* [AFOOT] add class 'active' to the correct article */
+  event.preventDefault();
+  const clickedArticle = this;
+  console.log('clickedArticle:', clickedArticle);
 }
+
 
 const links = document.querySelectorAll('.titles a');
 
