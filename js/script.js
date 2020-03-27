@@ -42,7 +42,7 @@ for(let activeLink of activeLinks){
 
 
   /* [AFOOT] find the correct article using the selector (value of 'href' attribute) */
-  const targetArticle = querySelector(href);
+  const targetArticle = document.querySelector(href);
   console.log(targetArticle);
 
 
@@ -50,6 +50,27 @@ for(let activeLink of activeLinks){
   event.preventDefault();
   const clickedArticle = this;
   console.log('clickedArticle:', clickedArticle);
+
+
+  /*[AFOOT] DELETE the content of links list (left column)*/
+
+
+
+  /*[AFOOT] READ article id and save it as a const*/
+
+
+
+  /*[AFOOT] FIND element with determined title and save its content to a const*/
+
+
+
+  /*[AFOOT] CREATE HTML link code and save it to a const*/
+
+
+
+  /*[AFOOT] PUT created HTML code to the list of links (left column)*/
+
+
 }
 
 
